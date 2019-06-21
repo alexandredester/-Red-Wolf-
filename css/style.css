@@ -1,0 +1,221 @@
+/* GLOBAL */
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto Slab";
+	font-size: 1em;
+	line-height: 2;
+	color: #684f53;
+	background-color: #f2f2f2;
+	/* En attendant de trouver la vraie cause du problème */
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+/* NAVIGATION */
+nav {
+	padding: 25px;
+	text-align: right;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li:first-child {
+	float: left;
+	margin: -20px;
+}
+
+nav img {
+	display: inline-block;
+}
+
+nav ul li a {
+	color: #a4243d;
+	font-size: 1.2em;
+	text-decoration: none;
+	padding: 10px 15px;
+	transition: all 0.25s linear 0s;
+}
+
+nav ul li a:hover {
+	color: white;
+	background-color: #f45d54;
+	transition: all 0.25s linear 0s;
+}
+
+#logo {
+	border: 0;
+}
+
+#logo:hover {
+	background-color: inherit;
+}
+
+/* SLIDER */
+.flexslider {
+	margin: 0;
+	border: 0;
+	background-color: inherit;
+}
+
+.flex-control-nav {
+	position: inherit;
+}
+
+.flex-control-paging li a {
+	background-color: #fbc69d;
+}
+
+.flex-control-paging li a:hover {
+	background-color: #a4243d;
+}
+
+.flex-control-paging li a.flex-active {
+	background-color: #f45d54;
+}
+
+/* ARTICLE */
+main h2 {
+	border-bottom: 5px solid #f45d54;
+	color: #a4243d;
+	padding: 10px 30px;
+	text-transform: uppercase;
+	font-family: "Roboto Slab";
+	font-size: 1.5em;
+	margin: 50px 0 25px;
+	letter-spacing: 1px;
+}
+
+main h2 span {
+	color: #f45d54;
+}
+
+.work li {
+	background-color: white;
+	display: inline-block;
+	text-align: center;
+	width: 23%;
+	padding: 0 10px 20px;
+	border: 1px solid #dedede
+}
+
+.work li+li {
+	margin-left: 2.667%;
+}
+
+.work a {
+	display: block;
+	color: #c54858;
+	border-bottom: 2px solid #c54858;
+	margin-bottom: 20px;
+	font-size: 2em;
+	text-decoration: none;
+	font-family: "Roboto Slab", sans-serif;
+}
+
+.work img {
+	max-width: 100%;
+	display: block;
+}
+
+.media article {
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.social {
+	margin-right: 1%;
+}
+
+.video {
+	margin-left: 1%;;
+	padding-top: 12px;
+}
+
+.social {
+	text-align: left;
+}
+
+.social i {
+	font-size: 5em;
+	padding: 15px 70px;
+	color: #f87e55;
+}
+
+.video iframe {
+	width: 100%;
+	height: 350px;
+	margin: 0 auto;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+/* FOOTER */
+footer {
+	background-color: #482537;
+	margin-top: 50px;
+	color: white;
+	padding: 50px;
+	text-align: center;
+}
+
+footer ul li {
+	padding: 10px;
+	display: inline-block;
+}
+
+footer ul li a {
+	color: white;
+}
+
+footer div h2 {
+	margin: 0;
+}
+
+@media screen and (max-width: 920px) {
+	nav ul li {
+		display: block;
+		margin: 25px;
+	}
+
+	nav ul li a {
+		padding: 20px 25px;
+	}
+
+	.work li {
+		width: 70%;
+		margin: 25px auto;
+		display: block;
+	}
+
+	.work li + li {
+		margin: 25px auto;
+	}
+
+	.team img {
+		width: inherit;
+	}
+
+	.media article {
+		width: 70%;
+		margin: 0 auto;
+		display: block;
+		text-align: center;
+	}
+
+	.social i {
+		display: block;
+	}
+}
